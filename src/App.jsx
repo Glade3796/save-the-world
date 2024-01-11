@@ -1,11 +1,23 @@
-export default function App(){
+import { useState } from "react";
+import Splash from "./components/Splash";
+
+export default function App() {
+  const [page, setPage] = useState(0);
   return (
     <main>
-    <div>Splash</div>
-    <div>Top bar</div>
-    <div>Click area</div>
-    <div>Purchase area</div>
-    <div>Footer</div>
+      {page === 0 && (
+        <div>
+          <Splash setPage={setPage} />
+        </div>
+      )}
+      {page === 1 && (
+        <>
+          <div>Top bar</div>
+          <div>Click area</div>
+          <div>Purchase area</div>
+          <div>Footer</div>
+        </>
+      )}
     </main>
-  )
+  );
 }
