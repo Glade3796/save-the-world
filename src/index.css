@@ -1,0 +1,9 @@
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+}
+.top-bar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

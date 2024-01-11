@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Splash from "./components/Splash";
+import TopBar from "./components/TopBar";
 
 export default function App() {
   const [page, setPage] = useState(0);
@@ -12,7 +13,9 @@ export default function App() {
       )}
       {page === 1 && (
         <>
-          <div>Top bar</div>
+          <div className="top-bar">
+            <TopBar setPage={setPage} />
+          </div>
           <div>Click area</div>
           <div>Purchase area</div>
           <div>Footer</div>

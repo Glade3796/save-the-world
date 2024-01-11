@@ -1,7 +1,7 @@
-export default function Splash({setPage}) {
-    function handleClickNewGame(){
-        setPage(1)
-    }
+export default function Splash({ setPage }) {
+  function handleClickNewGame() {
+    setPage(1);
+  }
   return (
     <div className="splash-screen">
       <h1>Save the world</h1>
