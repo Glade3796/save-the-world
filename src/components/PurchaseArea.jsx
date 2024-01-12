@@ -1,5 +1,5 @@
 import "./purchasarea.css";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import SolarPanelBtn from "./paButtons/SolarPanelBtn";
 import ElectricalPTBtn from "./paButtons/ElectricalPTBtn";
 
@@ -29,7 +29,7 @@ export default function PurchaseArea({
     return () => {
       setCarbonEmissionReduction(carbonEmissionReduction);
     };
-  }, [solarPanelNum, ePTNum, setCarbonEmissionReduction]);
+  }, [solarPanelNum, ePTNum, setCarbonEmissionReduction, carbonEmissionReduction]);
   return (
     <div className="purchase-area">
       <h3>Slow carbon emissions</h3>

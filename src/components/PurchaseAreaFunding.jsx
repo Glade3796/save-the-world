@@ -1,10 +1,9 @@
-import { useState } from "react";
+
 import "./purchasarea.css";
 export default function PurchaseAreaFunding({
   funds,
   setFunds,
   setIncome,
-  income,
   carbon,
   setCarbon,
   setSequester,
